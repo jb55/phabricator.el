@@ -5,13 +5,13 @@
 (defcustom phabricator-url "https://secure.phabricator.com/"
   "*Phabricator url"
   :group 'phabricator
-  :type '(string)
+  :type 'string
   )
 
 (defcustom phabricator-api-token "api-jadhsflajhsdfalksdjhf"
   "*Phabricator conduit api key"
   :group 'phabricator
-  :type '(string)
+  :type 'string
   )
 
 (defun phabricator-conduit-url (method args)
