@@ -4,11 +4,15 @@
 
 (defcustom phabricator-url "https://secure.phabricator.com/"
   "*Phabricator url"
-  :group 'phabricator)
+  :group 'phabricator
+  :type '(string)
+  )
 
 (defcustom phabricator-api-token "api-jadhsflajhsdfalksdjhf"
   "*Phabricator conduit api key"
-  :group 'phabricator)
+  :group 'phabricator
+  :type '(string)
+  )
 
 (defun phabricator-conduit-url (method args)
   (format (concat phabricator-url "api/%s?api.token=%s&%s")
